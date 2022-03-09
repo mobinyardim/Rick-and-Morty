@@ -14,3 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "RickAndMorty"
 include ':app'
+include ':features:main'
+include ':features:characters'
+include ':features:SavedCharacters'
+include ':features:characterDetail'
