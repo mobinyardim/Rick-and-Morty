@@ -3,7 +3,6 @@ package ir.mobinyardim.app.models
 data class Character(
     val id: Int,
     val name: String,
-    val episode: List<String>,
     val gender: Gender,
     val image: String,
     val location: Location,
