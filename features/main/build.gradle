@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.kapt'
 }
 
 android {
@@ -31,6 +32,9 @@ android {
     buildFeatures{
         dataBinding = true
     }
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -41,6 +45,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation project(":libraries:core:screens")
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
