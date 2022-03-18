@@ -35,6 +35,7 @@ dependencies {
 
     implementation project(":libraries:core:models")
     implementation project(":libraries:core:network")
+    implementation project(":libraries:core:database")
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
