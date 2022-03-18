@@ -1,15 +1,14 @@
 package ir.mobinyardim.app.chractersrepository.network.responses
 
-
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class GetCharacterResponse(
+data class CharacterResponse(
     @Json(name = "created")
     val created: String,
     @Json(name = "episode")
-    val episode: List<Any>,
+    val episode: List<String>,
     @Json(name = "gender")
     val gender: String,
     @Json(name = "id")
