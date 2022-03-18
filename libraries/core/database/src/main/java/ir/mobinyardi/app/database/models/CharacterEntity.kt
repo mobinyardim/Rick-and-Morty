@@ -10,8 +10,6 @@ import androidx.room.PrimaryKey
 data class CharacterEntity(
     @PrimaryKey @ColumnInfo(name = "id")
     val id: Int,
-    @ColumnInfo(name = "created")
-    val created: String,
     @ColumnInfo(name = "gender")
     val gender: String,
     @ColumnInfo(name = "image")
