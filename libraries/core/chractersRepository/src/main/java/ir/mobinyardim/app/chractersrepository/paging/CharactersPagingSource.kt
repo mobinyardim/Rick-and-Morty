@@ -3,7 +3,7 @@ package ir.mobinyardim.app.chractersrepository.paging
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import ir.mobinyardim.app.chractersrepository.network.Api
-import ir.mobinyardim.app.chractersrepository.toCharacter
+import ir.mobinyardim.app.chractersrepository.converter.toCharacter
 import ir.mobinyardim.app.models.Character
 import javax.inject.Inject
 

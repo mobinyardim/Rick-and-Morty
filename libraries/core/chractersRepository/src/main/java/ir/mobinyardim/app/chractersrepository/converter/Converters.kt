@@ -1,4 +1,4 @@
-package ir.mobinyardim.app.chractersrepository
+package ir.mobinyardim.app.chractersrepository.converter
 
 import ir.mobinyardi.app.database.models.CharacterEntity
 import ir.mobinyardim.app.chractersrepository.network.responses.CharacterResponse
