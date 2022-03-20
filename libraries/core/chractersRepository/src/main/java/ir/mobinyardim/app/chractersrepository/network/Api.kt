@@ -4,12 +4,13 @@ import ir.mobinyardim.app.chractersrepository.network.responses.CharacterRespons
 import ir.mobinyardim.app.chractersrepository.network.responses.GetAllCharactersResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
+import retrofit2.http.Url
 
 interface Api {
 
-    @GET("character")
+    @GET
     suspend fun getAllCharacters(
-
+        @Url url: String = "https://rickandmortyapi.com/api/character"
     ): GetAllCharactersResponse
 
     @GET("character/{id}")
