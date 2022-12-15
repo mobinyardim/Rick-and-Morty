@@ -9,7 +9,7 @@ fun CharacterResponse.toCharacter(): Character {
     return Character(
         id = id,
         name = name,
-        gender = when (gender) {
+        gender = when (gender.lowercase()) {
             "male" -> Character.Gender.MALE
             "female" -> Character.Gender.FEMALE
             else -> Character.Gender.UNKNOWN
