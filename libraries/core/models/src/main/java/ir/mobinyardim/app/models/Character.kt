@@ -12,6 +12,8 @@ data class Character(
     val type: String,
     val url: String
 ) {
+    val isSaved = false
+
     enum class Gender {
         FEMALE,
         MALE,
