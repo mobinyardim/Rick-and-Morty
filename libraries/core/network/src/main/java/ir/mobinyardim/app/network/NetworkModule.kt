@@ -1,11 +1,13 @@
 package ir.mobinyardim.app.network
 
+import android.util.Log
 import com.squareup.moshi.Moshi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import javax.inject.Singleton
@@ -18,7 +20,11 @@ object NetworkModule {
     @Provides
     @Singleton
     fun provideOkhttpClient(): OkHttpClient {
-        return OkHttpClient.Builder().build()
+        val interceptor = HttpLoggingInterceptor {
+            Log.d("Network", it)
+        }
+        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
+        return OkHttpClient.Builder().addInterceptor(interceptor).build()
     }
 
     @Provides
