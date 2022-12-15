@@ -28,7 +28,18 @@ class CharactersFragment : Fragment(R.layout.fragment_characters) {
     }
 
     private val viewModel by viewModels<CharactersViewModel>()
-    private val adapter = CharactersAdapter()
+    private val adapter = CharactersAdapter(
+        onItemClicked = {
+
+        },
+        onSaveButtonClicked = {
+            if (it.isSaved) {
+                viewModel.unSaveCharacter(character = it)
+            } else {
+                viewModel.saveCharacter(character = it)
+            }
+        }
+    )
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
