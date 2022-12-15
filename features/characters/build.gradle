@@ -40,6 +40,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.paging:paging-common-ktx:3.1.1'
+    implementation 'androidx.navigation:navigation-runtime-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
     implementation 'androidx.lifecycle:lifecycle-common-java8:2.5.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
@@ -47,7 +50,9 @@ dependencies {
 
     kapt 'com.google.dagger:hilt-android-compiler:2.42'
 
+    implementation project(":libraries:ui:characters-common")
     implementation project(":libraries:core:screens")
+    implementation project(":libraries:core:models")
     implementation project(":libraries:core:chractersRepository")
 
     testImplementation 'junit:junit:4.13.2'
