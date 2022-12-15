@@ -9,6 +9,8 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import ir.mobinyardim.app.models.Character
 
 class CharactersAdapter(
@@ -44,7 +46,10 @@ class CharactersAdapter(
             if (character != null) {
                 name.text = character.name
                 gender.text = character.gender.name
-                Glide.with(itemView).load(character.image).into(image)
+
+                Glide.with(itemView).load(character.image)
+                    .transform(CenterCrop(), RoundedCorners(25))
+                    .into(image)
             }
         }
     }
