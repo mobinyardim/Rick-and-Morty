@@ -54,3 +54,25 @@ fun Character.toCharacterEntity(): CharacterEntity {
         url = url,
     )
 }
+
+
+fun CharacterEntity.toDomain(): Character {
+    return Character(
+        id = id,
+        name = name,
+        gender = Character.Gender.valueOf(name),
+        image = image,
+        location = Character.Location(
+            name = location.name,
+            url = url
+        ),
+        origin = Character.Origin(
+            name = origin.name,
+            url = origin.url
+        ),
+        species = species,
+        status = Character.Status.valueOf(status),
+        type = type,
+        url = url,
+    )
+}
