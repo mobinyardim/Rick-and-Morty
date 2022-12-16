@@ -9,6 +9,11 @@
         android:id="@+id/characterDetailFragment"
         android:name="ir.mobinyardim.rickandmorty.characterdetail.CharacterDetailFragment"
         android:label="CharacterDetailFragment"
-        tools:layout="@layout/fragment_character_detail" />
+        tools:layout="@layout/fragment_character_detail">
+
+        <argument
+            android:name="characterId"
+            app:argType="Int" />
+    </fragment>
 
 </navigation>
