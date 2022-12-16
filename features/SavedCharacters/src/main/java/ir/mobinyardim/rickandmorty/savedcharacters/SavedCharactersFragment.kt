@@ -1,4 +1,4 @@
-package ir.mobinyardim.app.savedcharacters
+package ir.mobinyardim.rickandmorty.savedcharacters
 
 import android.os.Bundle
 import android.view.View
@@ -11,7 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import ir.mobinyardim.rickandmorty.characters_common.CharactersAdapter
 import ir.mobinyardim.rickandmorty.characters_common.VerticalSpaceItemDecoration
 import dagger.hilt.android.AndroidEntryPoint
-import ir.mobinyardim.app.savedcharacters.viewmodel.SavedCharactersViewModel
+import ir.mobinyardim.app.savedcharacters.R
+import ir.mobinyardim.rickandmorty.savedcharacters.viewmodel.SavedCharactersViewModel
 import kotlinx.coroutines.flow.collectLatest
 
 
