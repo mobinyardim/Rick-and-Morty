@@ -7,13 +7,16 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import ir.mobinyardim.rickandmorty.characters_common.CharactersAdapter
 import ir.mobinyardim.rickandmorty.characters_common.VerticalSpaceItemDecoration
 import dagger.hilt.android.AndroidEntryPoint
 import ir.mobinyardim.app.characters.R
 import ir.mobinyardim.rickandmorty.characters.viewmodel.CharactersViewModel
+import ir.mobinyardim.rickandmorty.route_contracts.CharacterDetailRouteContract
 import kotlinx.coroutines.flow.collectLatest
+import javax.inject.Inject
 
 
 @AndroidEntryPoint
@@ -28,10 +31,13 @@ class CharactersFragment : Fragment(R.layout.fragment_characters) {
         }
     }
 
+    @Inject
+    lateinit var charactersRouteContract: CharacterDetailRouteContract
+
     private val viewModel by viewModels<CharactersViewModel>()
     private val adapter = CharactersAdapter(
         onItemClicked = {
-
+            charactersRouteContract.show(findNavController(), it.id)
         },
         onSaveButtonClicked = {
             if (it.isSaved) {
