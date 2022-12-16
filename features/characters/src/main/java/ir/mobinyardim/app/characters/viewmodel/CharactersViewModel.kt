@@ -17,16 +17,7 @@ class CharactersViewModel @Inject constructor(
     private val charactersRepository: CharactersRepository
 ) : ViewModel() {
 
-    private val savedCharacters = charactersRepository.getSavedCharacters()
-
-    val characters = combine(
-        savedCharacters,
-        charactersRepository.getAllCharacters().cachedIn(viewModelScope)
-    ) { savedCharacters, pagedCharacters ->
-        pagedCharacters.map {
-            it.copy(isSaved = savedCharacters.contains(it))
-        }
-    }
+    val characters = charactersRepository.getAllCharacters(viewModelScope)
 
     fun saveCharacter(character: Character) = viewModelScope.launch(Dispatchers.IO) {
         charactersRepository.saveCharacter(character)

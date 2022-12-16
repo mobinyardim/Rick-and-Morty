@@ -1,8 +1,6 @@
 package ir.mobinyardim.app.chractersrepository
 
-import androidx.paging.Pager
-import androidx.paging.PagingConfig
-import androidx.paging.PagingData
+import androidx.paging.*
 import ir.mobinyardi.app.database.daos.CharacterDao
 import ir.mobinyardim.app.chractersrepository.converter.toCharacter
 import ir.mobinyardim.app.chractersrepository.converter.toCharacterEntity
@@ -10,7 +8,9 @@ import ir.mobinyardim.app.chractersrepository.converter.toDomain
 import ir.mobinyardim.app.chractersrepository.network.Api
 import ir.mobinyardim.app.chractersrepository.paging.CharactersPagingSource
 import ir.mobinyardim.app.models.Character
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -22,12 +22,21 @@ class CharactersRepositoryImpl @Inject constructor(
     private val charactersPagingSource: CharactersPagingSource
 ) : CharactersRepository {
 
-    override fun getAllCharacters(): Flow<PagingData<Character>> {
-        return Pager(
+    override fun getAllCharacters(viewModelScope: CoroutineScope): Flow<PagingData<Character>> {
+        val allCharacters = Pager(
             config = PagingConfig(10, enablePlaceholders = false)
         ) {
             charactersPagingSource
-        }.flow
+        }.flow.cachedIn(viewModelScope)
+
+        return combine(
+            getSavedCharacters(),
+            allCharacters
+        ) { savedCharacters, pagedCharacters ->
+            pagedCharacters.map {
+                it.copy(isSaved = savedCharacters.contains(it))
+            }
+        }
     }
 
     override suspend fun getCharacter(id: Int): Character {
