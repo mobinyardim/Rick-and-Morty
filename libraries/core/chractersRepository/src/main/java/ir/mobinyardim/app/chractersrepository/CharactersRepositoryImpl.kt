@@ -57,4 +57,11 @@ class CharactersRepositoryImpl @Inject constructor(
         }
     }
 
+    override fun getSavedCharactersAsPaging(): Flow<PagingData<Character>> {
+        return Pager(
+            config = PagingConfig(10, enablePlaceholders = false)
+        ) {
+            localSource.getAllAsPaging()
+        }.flow.map { list -> list.map { it.toDomain().copy(isSaved = true) } }
+    }
 }

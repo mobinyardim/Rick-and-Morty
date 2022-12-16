@@ -16,4 +16,6 @@ interface CharactersRepository {
     suspend fun unSaveCharacter(character: Character)
 
     fun getSavedCharacters(): Flow<List<Character>>
+
+    fun getSavedCharactersAsPaging(): Flow<PagingData<Character>>
 }
