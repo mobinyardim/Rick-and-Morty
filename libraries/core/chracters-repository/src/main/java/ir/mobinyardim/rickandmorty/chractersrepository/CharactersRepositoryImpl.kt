@@ -41,7 +41,9 @@ class CharactersRepositoryImpl @Inject constructor(
     }
 
     override fun getCharacter(id: Int): Flow<Character> = flow {
-        emit(remoteSource.getCharacter(id).toCharacter())
+        val character = remoteSource.getCharacter(id).toCharacter()
+        val isSaved = localSource.isExist(id)
+        emit(character.copy(isSaved = isSaved))
     }
 
     override suspend fun saveCharacter(character: Character) {
