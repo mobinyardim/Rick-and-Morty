@@ -10,9 +10,9 @@ data class Character(
     val species: String,
     val status: Status,
     val type: String,
-    val url: String
+    val url: String,
+    val isSaved: Boolean = false
 ) {
-    val isSaved = false
 
     enum class Gender {
         FEMALE,
