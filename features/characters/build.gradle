@@ -50,9 +50,10 @@ dependencies {
 
     kapt 'com.google.dagger:hilt-android-compiler:2.42'
 
-    implementation project(":libraries:ui:characters-common")
-    implementation project(":libraries:core:screens")
     implementation project(":libraries:core:models")
+    implementation project(":libraries:core:screens")
+    implementation project(":libraries:ui:characters-common")
+    implementation project(":libraries:core:route-contracts")
     implementation project(':libraries:core:chracters-repository')
 
     testImplementation 'junit:junit:4.13.2'
