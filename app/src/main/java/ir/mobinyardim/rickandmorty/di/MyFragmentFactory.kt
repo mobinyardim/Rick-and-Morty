@@ -2,7 +2,7 @@ package ir.mobinyardim.rickandmorty.di
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
-import ir.mobinyardim.app.characterdetail.CharacterDetailFragment
+import ir.mobinyardim.rickandmorty.characterdetail.CharacterDetailFragment
 import ir.mobinyardim.app.main.MainFragment
 import ir.mobinyardim.rickandmorty.screens.ScreenProvidersStore
 import javax.inject.Inject
