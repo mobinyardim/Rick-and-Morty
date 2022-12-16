@@ -9,7 +9,7 @@ interface CharactersRepository {
 
     fun getAllCharacters(viewModelScope: CoroutineScope): Flow<PagingData<Character>>
 
-    suspend fun getCharacter(id: Int): Character
+    fun getCharacter(id: Int): Flow<Character>
 
     suspend fun saveCharacter(character: Character)
 

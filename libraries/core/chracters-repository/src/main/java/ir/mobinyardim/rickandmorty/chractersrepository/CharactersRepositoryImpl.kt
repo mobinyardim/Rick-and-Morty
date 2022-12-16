@@ -11,6 +11,7 @@ import ir.mobinyardim.rickandmorty.models.Character
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -39,8 +40,8 @@ class CharactersRepositoryImpl @Inject constructor(
         }
     }
 
-    override suspend fun getCharacter(id: Int): Character {
-        return remoteSource.getCharacter(id).toCharacter()
+    override fun getCharacter(id: Int): Flow<Character> = flow {
+        emit(remoteSource.getCharacter(id).toCharacter())
     }
 
     override suspend fun saveCharacter(character: Character) {
