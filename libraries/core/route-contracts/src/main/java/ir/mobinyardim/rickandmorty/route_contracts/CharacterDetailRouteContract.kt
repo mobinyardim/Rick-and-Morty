@@ -1,4 +1,4 @@
-package ir.mobinyardim.routecontracts
+package ir.mobinyardim.rickandmorty.route_contracts
 
 import androidx.navigation.NavController
 
