@@ -1,4 +1,4 @@
-package ir.mobinyardim.app.chractersrepository.network.responses
+package ir.mobinyardim.rickandmorty.chractersrepository.network.responses
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass

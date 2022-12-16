@@ -58,7 +58,7 @@ dependencies {
     implementation project(":libraries:core:network")
     implementation project(":libraries:core:screens")
     implementation project(':libraries:core:route-contracts')
-    implementation project(":libraries:core:chractersRepository")
+    implementation project(':libraries:core:chracters-repository')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'

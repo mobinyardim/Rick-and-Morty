@@ -1,7 +1,7 @@
-package ir.mobinyardim.app.chractersrepository.converter
+package ir.mobinyardim.rickandmorty.chractersrepository.converter
 
 import ir.mobinyardi.app.database.models.CharacterEntity
-import ir.mobinyardim.app.chractersrepository.network.responses.CharacterResponse
+import ir.mobinyardim.rickandmorty.chractersrepository.network.responses.CharacterResponse
 import ir.mobinyardim.app.models.Character
 
 

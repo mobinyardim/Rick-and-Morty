@@ -1,7 +1,7 @@
-package ir.mobinyardim.app.chractersrepository.network
+package ir.mobinyardim.rickandmorty.chractersrepository.network
 
-import ir.mobinyardim.app.chractersrepository.network.responses.CharacterResponse
-import ir.mobinyardim.app.chractersrepository.network.responses.GetAllCharactersResponse
+import ir.mobinyardim.rickandmorty.chractersrepository.network.responses.CharacterResponse
+import ir.mobinyardim.rickandmorty.chractersrepository.network.responses.GetAllCharactersResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Url

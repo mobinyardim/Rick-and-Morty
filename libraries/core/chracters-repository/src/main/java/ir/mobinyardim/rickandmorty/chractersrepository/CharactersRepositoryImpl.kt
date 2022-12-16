@@ -1,12 +1,12 @@
-package ir.mobinyardim.app.chractersrepository
+package ir.mobinyardim.rickandmorty.chractersrepository
 
 import androidx.paging.*
 import ir.mobinyardi.app.database.daos.CharacterDao
-import ir.mobinyardim.app.chractersrepository.converter.toCharacter
-import ir.mobinyardim.app.chractersrepository.converter.toCharacterEntity
-import ir.mobinyardim.app.chractersrepository.converter.toDomain
-import ir.mobinyardim.app.chractersrepository.network.Api
-import ir.mobinyardim.app.chractersrepository.paging.CharactersPagingSource
+import ir.mobinyardim.rickandmorty.chractersrepository.converter.toCharacter
+import ir.mobinyardim.rickandmorty.chractersrepository.converter.toCharacterEntity
+import ir.mobinyardim.rickandmorty.chractersrepository.converter.toDomain
+import ir.mobinyardim.rickandmorty.chractersrepository.network.Api
+import ir.mobinyardim.rickandmorty.chractersrepository.paging.CharactersPagingSource
 import ir.mobinyardim.app.models.Character
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow

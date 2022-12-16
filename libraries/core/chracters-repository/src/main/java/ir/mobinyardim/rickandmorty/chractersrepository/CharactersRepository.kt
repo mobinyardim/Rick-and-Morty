@@ -1,4 +1,4 @@
-package ir.mobinyardim.app.chractersrepository
+package ir.mobinyardim.rickandmorty.chractersrepository
 
 import androidx.paging.PagingData
 import ir.mobinyardim.app.models.Character

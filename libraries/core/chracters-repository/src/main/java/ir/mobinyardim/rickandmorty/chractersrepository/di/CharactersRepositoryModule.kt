@@ -1,12 +1,12 @@
-package ir.mobinyardim.app.chractersrepository.di
+package ir.mobinyardim.rickandmorty.chractersrepository.di
 
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import ir.mobinyardim.app.chractersrepository.CharactersRepository
-import ir.mobinyardim.app.chractersrepository.CharactersRepositoryImpl
-import ir.mobinyardim.app.chractersrepository.network.Api
+import ir.mobinyardim.rickandmorty.chractersrepository.CharactersRepository
+import ir.mobinyardim.rickandmorty.chractersrepository.CharactersRepositoryImpl
+import ir.mobinyardim.rickandmorty.chractersrepository.network.Api
 import retrofit2.Retrofit
 import javax.inject.Singleton
 

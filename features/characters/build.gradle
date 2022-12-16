@@ -53,7 +53,7 @@ dependencies {
     implementation project(":libraries:ui:characters-common")
     implementation project(":libraries:core:screens")
     implementation project(":libraries:core:models")
-    implementation project(":libraries:core:chractersRepository")
+    implementation project(':libraries:core:chracters-repository')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'

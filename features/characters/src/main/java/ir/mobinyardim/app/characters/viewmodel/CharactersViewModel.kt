@@ -5,7 +5,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
 import androidx.paging.map
 import dagger.hilt.android.lifecycle.HiltViewModel
-import ir.mobinyardim.app.chractersrepository.CharactersRepository
+import ir.mobinyardim.rickandmorty.chractersrepository.CharactersRepository
 import javax.inject.Inject
 import ir.mobinyardim.app.models.Character
 import kotlinx.coroutines.Dispatchers
