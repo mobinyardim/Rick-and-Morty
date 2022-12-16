@@ -1,4 +1,4 @@
-package ir.mobinyardi.app.database.models
+package ir.mobinyardim.rickandmorty.database.models
 
 
 import androidx.room.ColumnInfo

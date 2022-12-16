@@ -1,7 +1,7 @@
 package ir.mobinyardim.rickandmorty.chractersrepository
 
 import androidx.paging.*
-import ir.mobinyardi.app.database.daos.CharacterDao
+import ir.mobinyardim.rickandmorty.database.daos.CharacterDao
 import ir.mobinyardim.rickandmorty.chractersrepository.converter.toCharacter
 import ir.mobinyardim.rickandmorty.chractersrepository.converter.toCharacterEntity
 import ir.mobinyardim.rickandmorty.chractersrepository.converter.toDomain

@@ -1,4 +1,4 @@
-package ir.mobinyardi.app.database.daos
+package ir.mobinyardim.rickandmorty.database.daos
 
 import androidx.paging.PagingSource
 import androidx.room.Dao
@@ -6,7 +6,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import ir.mobinyardi.app.database.models.CharacterEntity
+import ir.mobinyardim.rickandmorty.database.models.CharacterEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao
