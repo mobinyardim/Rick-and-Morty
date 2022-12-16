@@ -1,4 +1,4 @@
-package ir.mobinyardim.app.network
+package ir.mobinyardim.rickandmorty.network
 
 import android.util.Log
 import com.squareup.moshi.Moshi

@@ -1,3 +1,3 @@
-package ir.mobinyardim.app.network
+package ir.mobinyardim.rickandmorty.network
 
 const val BASE_URL = "https://rickandmortyapi.com/api/"
