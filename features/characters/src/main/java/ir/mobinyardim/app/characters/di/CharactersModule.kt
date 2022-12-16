@@ -6,7 +6,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import ir.mobinyardim.app.characters.CharactersFragment
-import ir.mobinyardim.app.screens.CharactersFragmentProvider
+import ir.mobinyardim.rickandmorty.screens.CharactersFragmentProvider
 
 @Module
 @InstallIn(SingletonComponent::class)

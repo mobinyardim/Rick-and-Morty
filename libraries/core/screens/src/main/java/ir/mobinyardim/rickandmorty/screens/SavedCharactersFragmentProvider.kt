@@ -1,4 +1,4 @@
-package ir.mobinyardim.app.screens
+package ir.mobinyardim.rickandmorty.screens
 
 import androidx.fragment.app.Fragment
 

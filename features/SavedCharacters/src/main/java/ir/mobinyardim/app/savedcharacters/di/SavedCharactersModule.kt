@@ -6,7 +6,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import ir.mobinyardim.app.savedcharacters.SavedCharactersFragment
-import ir.mobinyardim.app.screens.SavedCharactersFragmentProvider
+import ir.mobinyardim.rickandmorty.screens.SavedCharactersFragmentProvider
 import javax.inject.Singleton
 
 @Module

@@ -4,7 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
 import ir.mobinyardim.app.characterdetail.CharacterDetailFragment
 import ir.mobinyardim.app.main.MainFragment
-import ir.mobinyardim.app.screens.ScreenProvidersStore
+import ir.mobinyardim.rickandmorty.screens.ScreenProvidersStore
 import javax.inject.Inject
 import kotlin.time.ExperimentalTime
 

@@ -2,7 +2,7 @@ package ir.mobinyardim.app.main
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import ir.mobinyardim.app.screens.ScreenProvidersStore
+import ir.mobinyardim.rickandmorty.screens.ScreenProvidersStore
 
 class ViewPagerAdapter(
     fragment: Fragment,

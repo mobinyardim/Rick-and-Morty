@@ -6,7 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
 import ir.mobinyardim.app.main.databinding.FragmentMainBinding
-import ir.mobinyardim.app.screens.ScreenProvidersStore
+import ir.mobinyardim.rickandmorty.screens.ScreenProvidersStore
 
 class MainFragment(
     private val screenProvidersStore: ScreenProvidersStore
