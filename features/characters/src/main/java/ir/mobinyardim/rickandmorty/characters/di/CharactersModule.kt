@@ -1,11 +1,11 @@
-package ir.mobinyardim.app.characters.di
+package ir.mobinyardim.rickandmorty.characters.di
 
 import androidx.fragment.app.Fragment
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import ir.mobinyardim.app.characters.CharactersFragment
+import ir.mobinyardim.rickandmorty.characters.CharactersFragment
 import ir.mobinyardim.rickandmorty.screens.CharactersFragmentProvider
 
 @Module

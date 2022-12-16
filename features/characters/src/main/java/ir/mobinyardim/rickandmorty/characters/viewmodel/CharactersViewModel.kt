@@ -1,4 +1,4 @@
-package ir.mobinyardim.app.characters.viewmodel
+package ir.mobinyardim.rickandmorty.characters.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
