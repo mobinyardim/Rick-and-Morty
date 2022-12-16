@@ -1,4 +1,4 @@
-package ir.mobinyardim.app.main
+package ir.mobinyardim.rickandmorty.main
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter

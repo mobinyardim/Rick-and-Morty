@@ -1,10 +1,11 @@
-package ir.mobinyardim.app.main
+package ir.mobinyardim.rickandmorty.main
 
 import android.os.Bundle
 import android.view.View
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
+import ir.mobinyardim.app.main.R
 import ir.mobinyardim.app.main.databinding.FragmentMainBinding
 import ir.mobinyardim.rickandmorty.screens.ScreenProvidersStore
 
