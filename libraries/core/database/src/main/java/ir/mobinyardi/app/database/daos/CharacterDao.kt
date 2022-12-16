@@ -6,6 +6,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import ir.mobinyardi.app.database.models.CharacterEntity
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface CharacterDao {
@@ -17,5 +18,5 @@ interface CharacterDao {
     suspend fun delete(characterEntity: CharacterEntity)
 
     @Query("SELECT * FROM characters")
-    suspend fun getAll(): List<CharacterEntity>
+    fun getAll(): Flow<List<CharacterEntity>>
 }
