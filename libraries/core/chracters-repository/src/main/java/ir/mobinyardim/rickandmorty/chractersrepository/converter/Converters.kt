@@ -2,7 +2,7 @@ package ir.mobinyardim.rickandmorty.chractersrepository.converter
 
 import ir.mobinyardim.rickandmorty.database.models.CharacterEntity
 import ir.mobinyardim.rickandmorty.chractersrepository.network.responses.CharacterResponse
-import ir.mobinyardim.app.models.Character
+import ir.mobinyardim.rickandmorty.models.Character
 
 
 fun CharacterResponse.toCharacter(): Character {

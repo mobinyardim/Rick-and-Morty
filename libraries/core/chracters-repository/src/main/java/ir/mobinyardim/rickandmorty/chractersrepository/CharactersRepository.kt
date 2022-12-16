@@ -1,7 +1,7 @@
 package ir.mobinyardim.rickandmorty.chractersrepository
 
 import androidx.paging.PagingData
-import ir.mobinyardim.app.models.Character
+import ir.mobinyardim.rickandmorty.models.Character
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 

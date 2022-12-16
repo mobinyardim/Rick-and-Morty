@@ -7,7 +7,7 @@ import ir.mobinyardim.rickandmorty.chractersrepository.converter.toCharacterEnti
 import ir.mobinyardim.rickandmorty.chractersrepository.converter.toDomain
 import ir.mobinyardim.rickandmorty.chractersrepository.network.Api
 import ir.mobinyardim.rickandmorty.chractersrepository.paging.CharactersPagingSource
-import ir.mobinyardim.app.models.Character
+import ir.mobinyardim.rickandmorty.models.Character
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine

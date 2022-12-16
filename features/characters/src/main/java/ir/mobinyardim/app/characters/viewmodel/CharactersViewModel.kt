@@ -7,7 +7,7 @@ import androidx.paging.map
 import dagger.hilt.android.lifecycle.HiltViewModel
 import ir.mobinyardim.rickandmorty.chractersrepository.CharactersRepository
 import javax.inject.Inject
-import ir.mobinyardim.app.models.Character
+import ir.mobinyardim.rickandmorty.models.Character
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.launch

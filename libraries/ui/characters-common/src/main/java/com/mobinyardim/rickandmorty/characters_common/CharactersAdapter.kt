@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
-import ir.mobinyardim.app.models.Character
+import ir.mobinyardim.rickandmorty.models.Character
 
 class CharactersAdapter(
     private val onItemClicked: (Character) -> Unit = {},

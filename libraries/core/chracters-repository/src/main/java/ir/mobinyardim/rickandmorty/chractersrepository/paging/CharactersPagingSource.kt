@@ -4,7 +4,7 @@ import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import ir.mobinyardim.rickandmorty.chractersrepository.network.Api
 import ir.mobinyardim.rickandmorty.chractersrepository.converter.toCharacter
-import ir.mobinyardim.app.models.Character
+import ir.mobinyardim.rickandmorty.models.Character
 import javax.inject.Inject
 
 class CharactersPagingSource @Inject constructor(

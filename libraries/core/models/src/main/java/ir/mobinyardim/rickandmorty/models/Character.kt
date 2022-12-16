@@ -1,4 +1,4 @@
-package ir.mobinyardim.app.models
+package ir.mobinyardim.rickandmorty.models
 
 data class Character(
     val id: Int,

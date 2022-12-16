@@ -8,7 +8,7 @@ import ir.mobinyardim.rickandmorty.chractersrepository.CharactersRepository
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import ir.mobinyardim.app.models.Character
+import ir.mobinyardim.rickandmorty.models.Character
 
 @HiltViewModel
 class SavedCharactersViewModel @Inject constructor(
