@@ -11,6 +11,7 @@ import ir.mobinyardim.app.chractersrepository.network.Api
 import ir.mobinyardim.app.chractersrepository.paging.CharactersPagingSource
 import ir.mobinyardim.app.models.Character
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -41,8 +42,10 @@ class CharactersRepositoryImpl @Inject constructor(
         localSource.delete(character.toCharacterEntity())
     }
 
-    override suspend fun getSavedCharacters(): List<Character> {
-        return localSource.getAll().map { it.toDomain() }
+    override fun getSavedCharacters(): Flow<List<Character>> {
+        return localSource.getAll().map { list ->
+            list.map { it.toDomain() }
+        }
     }
 
 }
