@@ -32,6 +32,7 @@ android {
     buildFeatures{
         dataBinding = true
     }
+    namespace 'ir.mobinyardim.app.characters'
 }
 
 dependencies {
