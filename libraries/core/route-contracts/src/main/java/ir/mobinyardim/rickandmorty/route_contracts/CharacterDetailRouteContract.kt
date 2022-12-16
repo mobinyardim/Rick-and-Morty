@@ -4,5 +4,12 @@ import androidx.navigation.NavController
 
 interface CharacterDetailRouteContract {
 
-    fun show(navController: NavController)
+    companion object {
+        val CHARACTER_ID_KEY = "characterId"
+    }
+
+    fun show(
+        navController: NavController,
+        characterId: Int
+    )
 }
