@@ -1,5 +1,6 @@
 package ir.mobinyardi.app.database.daos
 
+import androidx.paging.PagingSource
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -19,4 +20,7 @@ interface CharacterDao {
 
     @Query("SELECT * FROM characters")
     fun getAll(): Flow<List<CharacterEntity>>
+
+    @Query("SELECT * FROM characters")
+    fun getAllAsPaging(): PagingSource<Int, CharacterEntity>
 }
