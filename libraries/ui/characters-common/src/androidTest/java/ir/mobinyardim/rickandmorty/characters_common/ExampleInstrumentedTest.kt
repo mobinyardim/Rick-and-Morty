@@ -1,4 +1,4 @@
-package com.mobinyardim.rickandmorty.characters_common
+package ir.mobinyardim.rickandmorty.characters_common
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

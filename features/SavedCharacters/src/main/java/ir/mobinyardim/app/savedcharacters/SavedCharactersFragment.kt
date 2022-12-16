@@ -8,8 +8,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.RecyclerView
-import com.mobinyardim.rickandmorty.characters_common.CharactersAdapter
-import com.mobinyardim.rickandmorty.characters_common.VerticalSpaceItemDecoration
+import ir.mobinyardim.rickandmorty.characters_common.CharactersAdapter
+import ir.mobinyardim.rickandmorty.characters_common.VerticalSpaceItemDecoration
 import dagger.hilt.android.AndroidEntryPoint
 import ir.mobinyardim.app.savedcharacters.viewmodel.SavedCharactersViewModel
 import kotlinx.coroutines.flow.collectLatest

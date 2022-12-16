@@ -1,4 +1,4 @@
-package com.mobinyardim.rickandmorty.characters_common
+package ir.mobinyardim.rickandmorty.characters_common
 
 import android.graphics.Rect
 import android.view.View
