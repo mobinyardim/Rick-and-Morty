@@ -18,6 +18,9 @@ interface CharacterDao {
     @Delete
     suspend fun delete(characterEntity: CharacterEntity)
 
+    @Query("SELECT count(*) from characters where id=:id > 0")
+    suspend fun isExist(id: Int): Boolean
+
     @Query("SELECT * FROM characters")
     fun getAll(): Flow<List<CharacterEntity>>
 
