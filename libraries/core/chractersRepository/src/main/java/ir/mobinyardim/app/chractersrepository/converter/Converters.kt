@@ -60,7 +60,7 @@ fun CharacterEntity.toDomain(): Character {
     return Character(
         id = id,
         name = name,
-        gender = Character.Gender.valueOf(name),
+        gender = Character.Gender.valueOf(gender),
         image = image,
         location = Character.Location(
             name = location.name,
