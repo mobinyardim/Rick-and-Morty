@@ -17,7 +17,7 @@ class MyFragmentFactory @Inject constructor(
     override fun instantiate(classLoader: ClassLoader, className: String): Fragment {
         return when (className) {
             MainFragment::class.java.name -> {
-                MainFragment(screenProvidersStore = screenProvidersStore)
+                MainFragment()
             }
             CharacterDetailFragment::class.java.name -> {
                 CharacterDetailFragment()
